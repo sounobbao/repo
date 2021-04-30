@@ -1,5 +1,4 @@
 FROM alpine:3.4
-FROM openjdk:8-jdk-oraclelinux8
 
 RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser --disabled-password --home /home/container container
