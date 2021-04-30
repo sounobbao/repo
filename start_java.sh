@@ -6,7 +6,7 @@ echo "IP: ${SERVER_IP}"
 echo "PORTA: ${SERVER_PORT}"
 echo "========================="
 
-if [[ -z "{{env.server_jar}}" ]]; then 
+if [[ -z ${server_jar} ]]; then 
   echo "Nenhum server jar foi escolhido"
   echo "vá na aba startup e escreva o seu tipo de server"
   exit 0
