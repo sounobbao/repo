@@ -2,8 +2,8 @@
 
 echo "========================="
 echo "Informações do server"
-echo "IP: {{ SERVER_IP }}"
-echo "PORT: {{ SERVER_PORT }}"
+echo "IP: ${SERVER_IP}"
+echo "PORTA: ${SERVER_PORT}"
 echo "========================="
 
 if [[ -z "{{env.server_jar}}" ]]; then 
