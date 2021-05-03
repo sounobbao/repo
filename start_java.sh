@@ -6,6 +6,9 @@ echo "IP: ${SERVER_IP}"
 echo "PORTA: ${SERVER_PORT}"
 echo "========================="
 
+ls /bin/ServerJars
+echo "${server_jar}"
+
 echo "A tentar iniciar um server de minecraft"
 if [ ! -f /usr/bin/ServerJars/${server_jar}.jar ]; then
   echo "O server selecionado não foi encontrado"
