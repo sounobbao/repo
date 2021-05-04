@@ -72,7 +72,7 @@ main_menu () {
 	    done
 	else
 		echo "server.jar encontrado, a iniciar"
-		java -Xmx{{SERVER_MEMORY}}M -Xms128M -jar server.jar
+		java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
 	fi
 }
 
