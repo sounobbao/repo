@@ -1,4 +1,4 @@
-FROM openjdk:11-slim
+FROM adoptopenjdk/openjdk8-openj9:debian-slim
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
