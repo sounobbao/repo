@@ -15,6 +15,7 @@ function forge(){
 	            curl http://194.233.68.216:5051/download/forge-1.16.5-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
+		    mv forge-1.16.5-36.1.0.jar server.jar
 	            exit 0
 	        ;;
 			${options[1]})
@@ -22,6 +23,7 @@ function forge(){
 	            curl http://194.233.68.216:5051/download/forge-1.12.2-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
+		    mv forge-1.12.2-14.23.5.2855.jar server.jar
 	            exit 0
 	        ;;
 			${options[2]})
@@ -29,6 +31,7 @@ function forge(){
 	            curl http://194.233.68.216:5051/download/forge-1.7.10-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
+		    mv forge-1.7.10-10.13.4.1614-1.7.10-universal.jar server.jar
 	            exit 0
 	        ;;
 			${options[3]})
