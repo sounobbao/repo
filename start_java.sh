@@ -78,10 +78,9 @@ main_menu () {
 
 echo "========================="
 echo "Informações do server"
-echo "IP: {{ SERVER_IP }}"
-echo "PORT: {{ SERVER_PORT }}"
-echo "========================="
-echo
+echo "IP: ${SERVER_IP}"
+echo "PORTA: ${SERVER_PORT}"
+echo "=========================\n"
 echo "==========[ INFORMAÇÕES ]=========="
 echo "Para alterares o tipo do server"
 echo "apaga o ficheiro server.jar"
