@@ -231,9 +231,9 @@ main_menu () {
 	        esac
 	    done
 	else
-	        java -version
+	        echo "server.jar encontrado, a iniciar"
 		printf "===================================\n"
-		echo "server.jar encontrado, a iniciar"
+		java -version
 		printf "===================================\n"
 		java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
 	fi
