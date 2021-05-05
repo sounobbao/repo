@@ -233,7 +233,7 @@ main_menu () {
 	else
 	        java -version
 		printf "===================================\n"
-		echo "    server.jar encontrado, a iniciar  "
+		echo "server.jar encontrado, a iniciar"
 		printf "===================================\n"
 		java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
 	fi
