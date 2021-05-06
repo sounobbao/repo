@@ -17,7 +17,7 @@ function vanilla(){
 }
 
 function paper(){
-	echo "Selecione a sua versão do forge"
+	echo "Selecione a sua versão do PaperMC"
 	options=(
 	        "1.16.5"
 			"1.16.4"
