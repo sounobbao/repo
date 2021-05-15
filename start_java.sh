@@ -171,6 +171,7 @@ main_menu () {
 	        "Forge"
 	        "Paper"
 	        "Vanilla"
+		"Proxys"
 	        "Sair"
 	    )
 	    select option in "${options[@]}"; do
@@ -188,7 +189,11 @@ main_menu () {
 	                break
 	             ;;
 	            ${options[3]})
-	                exit
+	                proxy
+			break
+	             ;;
+		    ${options[4]})
+	                exit 0
 	             ;;
 	            *) 
 	                echo "Opeção inválida"
