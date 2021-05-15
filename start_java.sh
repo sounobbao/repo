@@ -166,7 +166,7 @@ main_menu () {
 	if [ ! -f ./server.jar ]; then	
 	    echo "server.jar não encontrado... selecione um server"
 		echo "ou fassa upload de um server.jar para o file manager"
-		echo "NOTA: só irao apareçer versões superiores a 1.13"
+		echo "NOTA: só irao apareçer versões suportadas pela Java11"
 	    options=(
 	        "Forge"
 	        "Paper"
