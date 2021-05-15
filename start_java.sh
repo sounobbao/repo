@@ -1,5 +1,22 @@
 #!/bin/bash
 
+function proxy(){
+	echo "Selecione o seu proxy"
+	echo "Se quiseres alguma informção sobre os tipos server vá no canal #minecraft-proxys"
+	options=('Bungeecord' 'Waterfall' 'Travertine' 'Velocity', 'Geyser')
+    select version in "${options[@]}";
+    do
+    	if [[ ! " ${options[@]} " =~ " ${version} " ]]; then
+    		echo "Essa versão não está na lista, a sair..."
+    		exit 0
+    	else
+    		echo "A transferir... (PROXY: ${version})"
+    		curl http://194.233.68.216:5051/download/proxy-${version}.jar -o server.jar
+    		exit 0
+    	fi
+    done
+}
+
 function vanilla(){
 	echo "Selecione a sua versão do minecraft vanilla"
 	options=('1.16.5' '1.16.4' '1.16.3' '1.16.2' '1.16.1' '1.16' '1.15.2' '1.15.1' '1.15' '1.14.4' '1.14.3' '1.14.2' '1.14.1' '1.14' '1.13.2' '1.13.1' '1.13' )
