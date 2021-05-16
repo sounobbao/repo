@@ -218,9 +218,12 @@ function forge(){
 
 
 main_menu () {
-	if [ ! -f ./server.jar ]; then	
+	if [ ! -f ./server.jar ]; then
+	    echo "==========[ INFORMAÇÕES ]=========="
 	    echo "server.jar não encontrado... selecione um server"
 	    echo "ou fassa upload de um server.jar para o file manager"
+	    printf "===================================\n%s\n"
+	    echo "Selecione o tipo de server"
 	    options=(
 	        "Forge"
 	        "Paper"
@@ -255,6 +258,10 @@ main_menu () {
 	        esac
 	    done
 	else
+	        echo "==========[ INFORMAÇÕES ]=========="
+                echo "Para alterares o tipo do server"
+                echo "apaga o ficheiro server.jar"
+                printf "===================================\n"
 	        echo "server.jar encontrado, a iniciar..."
 		printf "===================================\n"
 		java -version
@@ -267,10 +274,7 @@ echo "========================="
 echo "Informações do server"
 echo "IP: ${SERVER_IP}"
 echo "PORTA: ${SERVER_PORT}"
-printf "=========================\n"
-echo "==========[ INFORMAÇÕES ]=========="
-echo "Para alterares o tipo do server"
-echo "apaga o ficheiro server.jar"
-printf "===================================\n%s\n"
+printf "=========================\n%s\n"
+
 
 main_menu
