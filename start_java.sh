@@ -3,7 +3,7 @@
 function proxy(){
 	echo "Selecione o seu proxy"
 	echo "Se quiseres alguma informção sobre os tipos server vá no canal #minecraft-proxys"
-	options=('Bungeecord' 'Waterfall' 'Travertine' 'Velocity', 'Geyser')
+	options=('Bungeecord' 'Waterfall' 'Travertine' 'Velocity' 'Geyser')
     select version in "${options[@]}";
     do
     	if [[ ! " ${options[@]} " =~ " ${version} " ]]; then
@@ -220,7 +220,7 @@ function forge(){
 main_menu () {
 	if [ ! -f ./server.jar ]; then	
 	    echo "server.jar não encontrado... selecione um server"
-		echo "ou fassa upload de um server.jar para o file manager"
+	    echo "ou fassa upload de um server.jar para o file manager"
 	    options=(
 	        "Forge"
 	        "Paper"
@@ -255,11 +255,11 @@ main_menu () {
 	        esac
 	    done
 	else
-	        echo "server.jar encontrado, a iniciar"
+	        echo "server.jar encontrado, a iniciar..."
 		printf "===================================\n"
 		java -version
 		printf "===================================\n"
-		java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
+		eval java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
 	fi
 }
 
@@ -271,6 +271,6 @@ printf "=========================\n"
 echo "==========[ INFORMAÇÕES ]=========="
 echo "Para alterares o tipo do server"
 echo "apaga o ficheiro server.jar"
-printf "===================================\n"
+printf "===================================\n%s\n"
 
 main_menu
