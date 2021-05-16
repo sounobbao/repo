@@ -3,7 +3,7 @@
 function proxy(){
 	echo "Selecione o seu proxy"
 	echo "Se quiseres alguma informção sobre os tipos server vá no canal #minecraft-proxys"
-	options=('Bungeecord' 'Waterfall' 'Travertine' 'Velocity', 'Geyser')
+	options=('Bungeecord' 'Waterfall' 'Travertine' 'Velocity' 'Geyser')
     select version in "${options[@]}";
     do
     	if [[ ! " ${options[@]} " =~ " ${version} " ]]; then
@@ -163,10 +163,13 @@ function forge(){
 }
 
 main_menu () {
-	if [ ! -f ./server.jar ]; then	
+	if [ ! -f ./server.jar ]; then
+	    echo "==========[ INFORMAÇÕES ]=========="
 	    echo "server.jar não encontrado... selecione um server"
-		echo "ou fassa upload de um server.jar para o file manager"
-		echo "NOTA: só irao apareçer versões suportadas pela Java11"
+	    echo "ou fassa upload de um server.jar para o file manager"
+	    echo "o server está no modo Java11 só irao apareçer versões compativeis"
+	    printf "===================================\n%s\n"
+	    echo "Selecione o tipo de server"
 	    options=(
 	        "Forge"
 	        "Paper"
@@ -201,11 +204,15 @@ main_menu () {
 	        esac
 	    done
 	else
-	        echo "server.jar encontrado, a iniciar"
+	        echo "==========[ INFORMAÇÕES ]=========="
+                echo "Para alterares o tipo do server"
+                echo "apaga o ficheiro server.jar"
+                printf "===================================\n"
+	        echo "server.jar encontrado, a iniciar..."
 		printf "===================================\n"
-		java -version
+		eval java -version
 		printf "===================================\n"
-		java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
+		eval java -Xmx${SERVER_MEMORY}M -Xms128M -jar server.jar
 	fi
 }
 
@@ -213,10 +220,6 @@ echo "========================="
 echo "Informações do server"
 echo "IP: ${SERVER_IP}"
 echo "PORTA: ${SERVER_PORT}"
-printf "=========================\n"
-echo "==========[ INFORMAÇÕES ]=========="
-echo "Para alterares o tipo do server"
-echo "apaga o ficheiro server.jar"
-printf "===================================\n"
+printf "=========================\n%s\n"
 
 main_menu
