@@ -3,9 +3,9 @@
 main_menu () {
 	if [ ! -f ./pocketmine.phar ]; then
 		echo "A transferir pocketmine.phar"
-		curl https://serverjars.com/api/fetchJar/pocketmine -o pocketmine.phar
-		curl https://jenkins.pmmp.io/job/PHP-7.4-Aggregate/lastSuccessfulBuild/artifact/PHP-7.4-Linux-x86_64.tar.gz -o php.tar.gz && \
-		tar -xvf php.tar.gz && \
+		curl -s https://serverjars.com/api/fetchJar/pocketmine -o pocketmine.phar
+		curl -s https://jenkins.pmmp.io/job/PHP-7.4-Aggregate/lastSuccessfulBuild/artifact/PHP-7.4-Linux-x86_64.tar.gz -o php.tar.gz && \
+		tar -xf php.tar.gz && \
 		rm php.tar.gz
 		echo "Pronto... A reiniciar servidor"
 		exit 0
