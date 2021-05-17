@@ -11,7 +11,7 @@ function proxy(){
     		exit 0
     	else
     		echo "A transferir... (PROXY: ${version})"
-    		curl http://194.233.68.216:5051/download/proxy-${version}.jar -o server.jar
+    		curl -s http://194.233.68.216:5051/download/proxy-${version}.jar -o server.jar
     		exit 0
     	fi
     done
@@ -27,7 +27,7 @@ function vanilla(){
     		exit 0
     	else
     		echo "A transferir... (VANILLA: ${version})"
-    		curl http://194.233.68.216:5051/download/vanilla-${version}.jar -o server.jar
+    		curl -s http://194.233.68.216:5051/download/vanilla-${version}.jar -o server.jar
     		exit 0
     	fi
     done
@@ -62,102 +62,102 @@ function paper(){
 	    case $option in
 	        ${options[0]})
                 echo "A transferir... (PAPER: 1.16.5)"
-	            curl http://194.233.68.216:5051/download/paper-1.16.5.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.16.5.jar -o server.jar
 	            exit 0
 	        ;;
 			${options[1]})
                 echo "A transferir... (PAPER: 1.16.4)"
-	            curl http://194.233.68.216:5051/download/paper-1.16.5.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.16.5.jar -o server.jar
 	            exit 0
 	        ;;
 			${options[2]})
                 echo "A transferir... (PAPER: 1.16.3)"
-	            curl http://194.233.68.216:5051/download/paper-1.16.3.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.16.3.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[3]})
                 echo "A transferir... (PAPER: 1.16.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.16.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.16.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[4]})
                 echo "A transferir... (PAPER: 1.16.1)"
-	            curl http://194.233.68.216:5051/download/paper-1.16.1.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.16.1.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[5]})
                 echo "A transferir... (PAPER: 1.15.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.15.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.15.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[6]})
                 echo "A transferir... (PAPER: 1.15.1)"
-	            curl http://194.233.68.216:5051/download/paper-1.15.1.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.15.1.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[7]})
                 echo "A transferir... (PAPER: 1.15)"
-	            curl http://194.233.68.216:5051/download/paper-1.15.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.15.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[8]})
                 echo "A transferir... (PAPER: 1.14.4)"
-	            curl http://194.233.68.216:5051/download/paper-1.14.4.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.14.4.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[9]})
                 echo "A transferir... (PAPER: 1.14.3)"
-	            curl http://194.233.68.216:5051/download/paper-1.14.3.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.14.3.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[10]})
                 echo "A transferir... (PAPER: 1.14.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.14.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.14.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[11]})
                 echo "A transferir... (PAPER: 1.14.1)"
-	            curl http://194.233.68.216:5051/download/paper-1.14.1.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.14.1.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[12]})
                 echo "A transferir... (PAPER: 1.14)"
-	            curl http://194.233.68.216:5051/download/paper-1.14.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.14.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[13]})
                 echo "A transferir... (PAPER: 1.13.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.13.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.13.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[14]})
                 echo "A transferir... (PAPER: 1.12.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.12.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.12.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[15]})
                 echo "A transferir... (PAPER: 1.12)"
-	            curl http://194.233.68.216:5051/download/paper-1.12.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.12.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[16]})
                 echo "A transferir... (PAPER: 1.11.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.11.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.11.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[17]})
                 echo "A transferir... (PAPER: 1.10.2)"
-	            curl http://194.233.68.216:5051/download/paper-1.10.2.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.10.2.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[18]})
                 echo "A transferir... (PAPER: 1.9.4)"
-	            curl http://194.233.68.216:5051/download/paper-1.9.4.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.9.4.jar -o server.jar
 	            exit 0
 	        ;;
 	        ${options[19]})
                 echo "A transferir... (PAPER: 1.8.8)"
-	            curl http://194.233.68.216:5051/download/paper-1.8.8.jar -o server.jar
+	            curl -s http://194.233.68.216:5051/download/paper-1.8.8.jar -o server.jar
 	            exit 0
 	        ;;
 			${options[20]})
@@ -183,7 +183,7 @@ function forge(){
 	    case $option in
 	        ${options[0]})
                 echo "A transferir... (FORGE: 1.16.5/BUILD: RECOMENDED)"
-	            curl http://194.233.68.216:5051/download/forge-1.16.5-installer.jar -o installer.jar
+	            curl -s http://194.233.68.216:5051/download/forge-1.16.5-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
 		    mv forge-1.16.5-36.1.0.jar server.jar
@@ -191,7 +191,7 @@ function forge(){
 	        ;;
 			${options[1]})
                 echo "A transferir... (FORGE: 1.12.2/BUILD: RECOMENDED)"
-	            curl http://194.233.68.216:5051/download/forge-1.12.2-installer.jar -o installer.jar
+	            curl -s http://194.233.68.216:5051/download/forge-1.12.2-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
 		    mv forge-1.12.2-14.23.5.2855.jar server.jar
@@ -199,7 +199,7 @@ function forge(){
 	        ;;
 			${options[2]})
                 echo "A transferir... (FORGE: 1.7.10/BUILD: RECOMENDED)"
-	            curl http://194.233.68.216:5051/download/forge-1.7.10-installer.jar -o installer.jar
+	            curl -s http://194.233.68.216:5051/download/forge-1.7.10-installer.jar -o installer.jar
 	            java -Xmx${SERVER_MEMORY}M -Xms128M -jar installer.jar --installServer
 	            rm -rf installer.jar
 		    mv forge-1.7.10-10.13.4.1614-1.7.10-universal.jar server.jar
