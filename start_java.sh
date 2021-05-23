@@ -34,7 +34,7 @@ function vanilla(){
 }
 
 function paper(){
-	echo "Selecione a sua versão do PaperMC"
+	echo "Selecione a sua versão do PaperSpigot"
 	options=(
 	        "1.16.5"
 			"1.16.4"
@@ -226,7 +226,7 @@ main_menu () {
 	    echo "Selecione o tipo de server"
 	    options=(
 	        "Forge"
-	        "Paper"
+	        "PaperSpigot"
 	        "Vanilla"
 		"Proxys"
 	        "Sair"
